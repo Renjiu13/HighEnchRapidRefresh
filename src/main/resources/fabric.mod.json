@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "librarian-enchantment-mod",
+  "version": "${version}",
+  "name": "Librarian Enchantment Mod",
+  "description": "Enhances the enchantment books offered by librarian villagers",
+  "authors": [
+    "YourName"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/librarian-enchantment-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.librarianenchantment.LibrarianEnchantmentMod"
+    ]
+  },
+  "mixins": [
+    "librarian-enchantment-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
